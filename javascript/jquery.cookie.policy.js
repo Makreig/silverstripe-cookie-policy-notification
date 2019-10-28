@@ -110,7 +110,7 @@
         // create stylesheet
         $('head').append('<style>#cookie_container { display: none; position: fixed; ' + options.position + ': 0; left: ' + options.leftPadding + '; 	right: ' + options.rightPadding + '; z-index: 999; padding: 10px; background-color:' + options.bgColor + '; color:' + options.textColor + '; } .cookie_inner { width: 90%; margin: 0 auto; } .cookie_inner p { margin: 0; padding-top: 4px; } #setCookie { float: right; padding: 5px 10px; text-decoration: none; background-color: ' + options.btnColor + '; color: ' + options.btnTextColor + '; } #setCookie:hover { background-color: #AAAAAA !important; color: #000000 !important; }</style>');
         // create popup elements
-        $('<div id="cookie_container"><div class="cookie_inner"><a id="setCookie" href="#">' + options.btnText + '</a><p>' + options.text + '</p></div></div>').appendTo(this);
+        $('<div id="cookie_container"><div class="cookie_inner">' + options.text + '<p><a id="setCookie" href="#">' + options.btnText + '</a></p></div></div>').appendTo(this);
         // set cookie function
         $(document.body).on('click', '#setCookie', function(e) {
             e.preventDefault();
