@@ -41,6 +41,11 @@ class CookiePolicy extends Extension
     {
         return self::$include_cookie_policy_notification;
     }
+
+    public function CookieIsSet()
+    {
+        return Cookie::get('cookie_policy');
+    }
 }
 
 class CookiePolicy_Settings extends DataExtension

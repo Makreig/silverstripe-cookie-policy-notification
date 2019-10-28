@@ -123,6 +123,7 @@
             } else if (options.hideAnimation == 'slideUp') {
                 $('#cookie_container').slideUp();
             }
+            window.location.reload();
         });
         // detect cookie
         $(this).ready(function() {
