@@ -36,7 +36,7 @@ class CookiePolicy extends Extension
     {
         self::$include_cookie_policy_notification = (bool) $bool;
     }
-    
+
     public static function cookie_policy_notification_enabled()
     {
         return self::$include_cookie_policy_notification;
